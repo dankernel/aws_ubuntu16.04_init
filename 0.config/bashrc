@@ -5,10 +5,6 @@
 export TERM='xterm-256color'
 export LS_COLORS="di=91;40":"ex=0;42":"ln=96;40":"so=93;40"
 
-# Grep
-export GREP_OPTIONS='--color=auto'
-export GREP_OPTIONS='--color=always' GREP_COLOR='1;32' 
-
 # Ls
 alias l='ls --color=auto -al'
 alias ls='ls --color=auto -Ch'
@@ -20,7 +16,6 @@ alias v='vim'
 alias vv='vim main.c'
 alias p='ping google.com'
 alias config='gnome-control-center'
-alias conky='/home/dkdk/sh/conky/conky.sh'
 
 # System
 alias port='netstat -an | grep "LISTEN "'
@@ -34,24 +29,15 @@ alias u='cd ../'
 alias ker='cd ~/kernel'
 alias code='cd ~/code'
 alias uu='cd ../../'
+alias uuu='cd ../../../'
+alias uuuu='cd ../../../../'
+alias uuuuu='cd ../../../../../'
 
 # Sheel
-alias mkp='. ~/sh/mkp/mk_project.sh'
-#alias backup='. ~/sh/backup.sh'
-alias backup='. ~/sh/git/safe_git_backup.sh'
-alias con='. ~/sh/utility/network.sh'
-
-# Etc
-alias dkh='cp -r /home/dkdk/code/dkh ./'
+alias backup='. ~/sh/git.sh'
 
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
-export PATH=${PATH}:$HOME/gsutil
-export PYTHONPATH=${PYTHONPATH}:$HOME/gsutil/third_party/boto:$HOME/gsutil
-export PATH="$PATH:/opt/java/bin:/opt/android-sdk/tools:/opt/android-sdk/platform-tools:/usr/share/java/apache-ant/bin:/opt/android-ndk:/opt/android-ndk/build/tools:"
-export JAVA_HOME="/opt/java/"
-export CLASSPATH=".:/opt/java/jre/lib/rt.jar:/opt/android-sdk/platforms/android-16/android.jar" 
-
 
 PS1="\[\033[35m\][\u@\w]\[\033[00m\] $ "

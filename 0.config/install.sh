@@ -3,6 +3,7 @@ cp bashrc ~/.bashrc
 source ~/.bashrc
 
 cp ~/.vimrc ~/.vimrc.old
-mkdir .vim
+mkdir ~/.vim
 cp vimrc ~/.vimrc
 
+cp -r sh ~/sh
