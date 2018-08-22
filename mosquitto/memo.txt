@@ -1,0 +1,4 @@
+sudo service stop mosquitto
+sudo service start mosquitto
+
+mosquitto -v

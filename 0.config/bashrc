@@ -1,0 +1,43 @@
+# .bashrc
+
+# User specific aliases and functions
+
+export TERM='xterm-256color'
+export LS_COLORS="di=91;40":"ex=0;42":"ln=96;40":"so=93;40"
+
+# Ls
+alias l='ls --color=auto -al'
+alias ls='ls --color=auto -Ch'
+alias ll='ls --color=auto -Cthl'
+
+# App
+alias s='screen'
+alias v='vim'
+alias vv='vim main.c'
+alias p='ping google.com'
+alias config='gnome-control-center'
+
+# System
+alias port='netstat -an | grep "LISTEN "'
+alias cp='cp -i'
+alias mv='mv -i'
+alias du='du -sh ./*'
+alias c='clear'
+
+# Cd
+alias u='cd ../'
+alias ker='cd ~/kernel'
+alias code='cd ~/code'
+alias uu='cd ../../'
+alias uuu='cd ../../../'
+alias uuuu='cd ../../../../'
+alias uuuuu='cd ../../../../../'
+
+# Sheel
+alias backup='. ~/sh/git.sh'
+
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+PS1="\[\033[35m\][\u@\w]\[\033[00m\] $ "
