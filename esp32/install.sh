@@ -24,4 +24,4 @@ echo '[OK] Installed ESP32 IDF'
 echo 'export IDF_PATH=~/esp/esp-idf' >> ~/.bashrc
 echo '. ~/.bachrc'
 
-python -m pip install --user -r $IDF_PATH/requirements.txt
+echo 'Make conda envs and Run install2.sh'
