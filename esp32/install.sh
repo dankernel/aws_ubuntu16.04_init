@@ -12,8 +12,8 @@ mkdir -p $ESP32_PATH
 tar -xzf $TOOLCHAIN -C ${ESP32_PATH}
 
 echo '[OK] Installed ESP32 Toolchain'
-echo 'export PATH="$HOME/esp/xtensa-esp32-elf/bin:$PATH"' >> ~/.bashrc
-echo '. ~/.bachrc'
+echo 'export PATH="$HOME/esp32/xtensa-esp32-elf/bin:$PATH"' >> ~/.bashrc
+echo '. ~/.bashrc'
 
 # End
 rm $TOOLCHAIN
@@ -21,7 +21,7 @@ rm $TOOLCHAIN
 cd $ESP32_PATH
 git clone --recursive https://github.com/espressif/esp-idf.git
 echo '[OK] Installed ESP32 IDF'
-echo 'export IDF_PATH=~/esp/esp-idf' >> ~/.bashrc
-echo '. ~/.bachrc'
+echo 'export IDF_PATH=~/esp32/esp-idf' >> ~/.bashrc
+echo '. ~/.bashrc'
 
 echo 'Make conda envs and Run install2.sh'
